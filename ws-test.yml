@@ -1,0 +1,29 @@
+config:
+  target: "ws://127.0.0.1:8080/app/f3uikwdgqajjiyyjiq8w?protocol=7&client=js&version=8.4.0-rc2&flash=false"
+  plugins:
+    expect: {}
+  phases:
+    - duration: 60
+      arrivalRate: 5
+      name: Small WarmUp!
+    - duration: 120
+      arrivalRate: 5
+      rampTo: 40
+      name: Ramping up the Looooad!
+    - duration: 600
+      arrivalRate: 50
+      name: Sustained Load
+  output:
+    # - json: "./results.json" perbandingan 
+scenarios:
+  - name: "Testing"
+    engine: ws
+    flow:
+      - send:
+          event: "App\\Events\\SendDataEvent"
+          data: '{"clientId":"66e767f7-4f4a-4da6-a916-4dd601338e89","media":[{"name":"Beasiswa Aperti 2024","type":"image","data":"public\\/media\\/1720278486-449463894_838260611557469_2251665426558596472_n.jpg","duration":100}],"status":1}'
+          channel: "private-66e767f7-4f4a-4da6-a916-4dd601338e89"
+
+
+
+
