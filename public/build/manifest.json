@@ -1,0 +1,40 @@
+{
+  "public/fonts/Inter-Regular.ttf": {
+    "file": "assets/Inter-Regular-DYjygwQm.ttf",
+    "src": "public/fonts/Inter-Regular.ttf"
+  },
+  "public/fonts/lineicons.eot": {
+    "file": "assets/lineicons-D9-X_1Ry.eot",
+    "src": "public/fonts/lineicons.eot"
+  },
+  "public/fonts/lineicons.svg": {
+    "file": "assets/lineicons-sMsRZ0Ke.svg",
+    "src": "public/fonts/lineicons.svg"
+  },
+  "public/fonts/lineicons.ttf": {
+    "file": "assets/lineicons-DAzWth_t.ttf",
+    "src": "public/fonts/lineicons.ttf"
+  },
+  "public/fonts/lineicons.woff": {
+    "file": "assets/lineicons-CY9UncE-.woff",
+    "src": "public/fonts/lineicons.woff"
+  },
+  "public/fonts/lineicons.woff2": {
+    "file": "assets/lineicons-D6ZIaeqX.woff2",
+    "src": "public/fonts/lineicons.woff2"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BBknef9e.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BuejmSRd.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-DsTSQ1MK.css"
+    ]
+  }
+}
