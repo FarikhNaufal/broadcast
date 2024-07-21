@@ -12,7 +12,7 @@ use Illuminate\Support\Str;
 class AuthController extends Controller
 {
 
-    private $allowedEmails = ['muhammad.tajuddin20@student.uisi.ac.id'];
+    private $allowedEmails = ['muhammad.tajuddin20@student.uisi.ac.id', 'yohanes.riskajaya@uisi.ac.id', 'doni.pambudi@uisi.ac.id', 'taufiqotul.bariyah@uisi.ac.id'];
 
     public function redirectToGoogle(): RedirectResponse
     {
@@ -44,7 +44,7 @@ class AuthController extends Controller
             activityLog('Masuk', 'enter', 'success', 'Berhasil masuk');
             return redirect()->intended('/');
         } else {
-            return redirect('/auth/redirect');
+            return abort(403);
         }
 
 
