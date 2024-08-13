@@ -35,7 +35,3 @@ Route::post('/client-logout', function(Request $request){
 })->middleware(ClientMiddleware::class);
 
 
-Route::get('logme', function(){
-    Auth::loginUsingId(1);
-    return redirect('/');
-});
